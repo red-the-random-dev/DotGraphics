@@ -1,10 +1,5 @@
-﻿/*
- * Created by SharpDevelop.
- * User: Lenovo Yoga
- * Date: 30.01.2021
- * Time: 17:32
- * 
- * To change this template use Tools | Options | Coding | Edit Standard Headers.
+/*
+ * Display form. Currently unused.
  */
 namespace BrailleRenderer
 {
