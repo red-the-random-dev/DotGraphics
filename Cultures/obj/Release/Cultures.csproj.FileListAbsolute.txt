@@ -1,0 +1,3 @@
+C:\Users\Lenovo Yoga\Documents\SharpDevelop Projects\DotGraphics\Cultures\obj\Release\Cultures.csprojResolveAssemblyReference.cache
+C:\Users\Lenovo Yoga\Documents\SharpDevelop Projects\DotGraphics\Cultures\bin\Release\DotGraphics.Cultures.dll
+C:\Users\Lenovo Yoga\Documents\SharpDevelop Projects\DotGraphics\Cultures\obj\Release\DotGraphics.Cultures.dll
