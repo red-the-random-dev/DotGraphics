@@ -1,0 +1,8 @@
+C:\Users\Lenovo Yoga\Documents\SharpDevelop Projects\DotGraphics\BrailleUI\bin\Release\DotGraphics.Screens.dll
+C:\Users\Lenovo Yoga\Documents\SharpDevelop Projects\DotGraphics\BrailleUI\obj\Release\BrailleUI.csprojResolveAssemblyReference.cache
+C:\Users\Lenovo Yoga\Documents\SharpDevelop Projects\DotGraphics\BrailleUI\obj\Release\BrailleUI.csproj.GenerateResource.Cache
+C:\Users\Lenovo Yoga\Documents\SharpDevelop Projects\DotGraphics\BrailleUI\obj\Release\DotGraphics.BrailleUI.MainForm.resources
+C:\Users\Lenovo Yoga\Documents\SharpDevelop Projects\DotGraphics\BrailleUI\obj\Release\DotGraphics.BrailleUI.DisplayForm.resources
+C:\Users\Lenovo Yoga\Documents\SharpDevelop Projects\DotGraphics\BrailleUI\bin\Release\br_ui.exe
+C:\Users\Lenovo Yoga\Documents\SharpDevelop Projects\DotGraphics\BrailleUI\obj\Release\br_ui.exe
+C:\Users\Lenovo Yoga\Documents\SharpDevelop Projects\DotGraphics\BrailleUI\bin\Release\DotGraphics.Cultures.dll

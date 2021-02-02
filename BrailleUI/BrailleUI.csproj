@@ -1,18 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
   <PropertyGroup>
-    <ProjectGuid>{75E11424-6DBA-4998-913E-172B6CCD40D4}</ProjectGuid>
+    <ProjectGuid>{2D86BF9E-606C-40C0-8822-7D5D5E394C50}</ProjectGuid>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>DotGraphics.BrailleRenderer</RootNamespace>
-    <AssemblyName>br</AssemblyName>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DotGraphics.BrailleUI</RootNamespace>
+    <AssemblyName>br_ui</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <NoWin32Manifest>False</NoWin32Manifest>
-    <RunCodeAnalysis>False</RunCodeAnalysis>
-    <SourceAnalysisOverrideSettingsFile>C:\Users\Lenovo Yoga\AppData\Roaming\ICSharpCode/SharpDevelop4\Settings.SourceAnalysis</SourceAnalysisOverrideSettingsFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -24,8 +22,6 @@
     <Optimize>False</Optimize>
     <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <StartAction>Project</StartAction>
-    <StartArguments>-example</StartArguments>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <OutputPath>bin\Release\</OutputPath>
@@ -52,15 +48,35 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DisplayForm.cs" />
+    <Compile Include="DisplayForm.Designer.cs">
+      <DependentUpon>DisplayForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs" />
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RequestHandler.cs" />
+    <Compile Include="UIRequestHandler.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Cultures\Cultures.csproj">
+      <Project>{29FA4DEC-B7A3-45F6-8AFB-AFCFD035D057}</Project>
+      <Name>Cultures</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Screens\Screens.csproj">
       <Project>41663024-A0C5-4EB9-95C0-C96865C45FC0</Project>
       <Name>Screens</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DisplayForm.resx">
+      <DependentUpon>DisplayForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

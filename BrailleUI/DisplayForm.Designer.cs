@@ -1,7 +1,7 @@
-/*
- * Display form. Currently unused.
+﻿/*
+ * Display form.
  */
-namespace BrailleRenderer
+namespace DotGraphics.BrailleUI
 {
 	partial class DisplayForm
 	{
@@ -36,22 +36,26 @@ namespace BrailleRenderer
 			// 
 			// listBox1
 			// 
+			this.listBox1.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.listBox1.FormattingEnabled = true;
-			this.listBox1.ItemHeight = 16;
+			this.listBox1.ItemHeight = 20;
 			this.listBox1.Items.AddRange(new object[] {
-									"Here is your text",
-									"(Actually, this form was supposed to contain some kind of art, you know)"});
-			this.listBox1.Location = new System.Drawing.Point(12, 13);
+									"Take your text"});
+			this.listBox1.Location = new System.Drawing.Point(15, 12);
+			this.listBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
 			this.listBox1.Name = "listBox1";
-			this.listBox1.Size = new System.Drawing.Size(911, 468);
+			this.listBox1.Size = new System.Drawing.Size(1138, 424);
 			this.listBox1.TabIndex = 0;
 			// 
 			// DisplayForm
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 15F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(935, 493);
+			this.ClientSize = new System.Drawing.Size(1138, 462);
 			this.Controls.Add(this.listBox1);
+			this.Font = new System.Drawing.Font("OCR A Std", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+			this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
 			this.Name = "DisplayForm";
 			this.Text = "Braille Screen Display";
 			this.ResumeLayout(false);
