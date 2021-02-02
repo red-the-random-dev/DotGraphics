@@ -36,12 +36,16 @@ namespace DotGraphics.Cultures
 			Russian.Add("ui_compilebutton", "Собрать");
 			// Render section
 			Russian.Add("ui_targetlabel", "Расположение согбранного холста...");
-			Russian.Add("ui_txtlabel", "путь сохранения текстового файла...");
+			Russian.Add("ui_txtlabel", "Путь сохранения текстового файла...");
 			Russian.Add("ui_renderbutton", "Рендер");
 			// Save, Load, and Show result
 			Russian.Add("ui_loadbutton", "Открыть...");
 			Russian.Add("ui_savebutton", "Сохранить...");
 			Russian.Add("ui_showresult", "Показать результат после рендеринга изображения");
+			// File type filters
+			Russian.Add("filter_txt", "Текстовый документ (*.txt)|*.txt");
+			Russian.Add("filter_png", "PNG-изображение (*.png)|*.png");
+			Russian.Add("filter_o", "Сериализованный объект (*.o)|*.o");
 			
 			LanguageGetters.Add("ru-RU", GetRussian);
 			Languages.Add("ru-RU");

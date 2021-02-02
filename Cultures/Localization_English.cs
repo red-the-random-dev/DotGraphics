@@ -42,9 +42,13 @@ namespace DotGraphics.Cultures
 			English.Add("ui_loadbutton", "Load from...");
 			English.Add("ui_savebutton", "Save to...");
 			English.Add("ui_showresult", "Show result when render finishes");
+			// File type filters
+			English.Add("filter_txt", "Text document (*.txt)|*.txt");
+			English.Add("filter_png", "PNG image file (*.png)|*.png");
+			English.Add("filter_o", "Serialized object (*.o)|*.o");
 			
-			LanguageGetters.Add("en-EN", GetEnglish);
-			Languages.Add("en-EN");
+			LanguageGetters.Add("en-US", GetEnglish);
+			Languages.Add("en-US");
 		}
 		
 		static String GetEnglish(String Key)

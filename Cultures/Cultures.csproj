@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="Localization.cs" />
     <Compile Include="Localization_English.cs" />
+    <Compile Include="Localization_Russian.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
