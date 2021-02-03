@@ -43,4 +43,5 @@ Compiled objects are usable in both versions of application.
 
 (C) 2021 red-the-random-dev
 www.github.com/red-the-random-dev/DotGraphics/
+
 This software and source code are distributed under GNU General Public License v.3.0
