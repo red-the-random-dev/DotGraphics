@@ -54,7 +54,7 @@ namespace DotGraphics.Cultures
 			}
 			
 			String Lang = CultureInfo.CurrentCulture.ToString();
-			return LanguageGetters[(HasLang(Lang) ? Lang : "en-EN")](Key);
+			return LanguageGetters[(HasLang(Lang) ? Lang : "en-US")](Key);
 		}
 	}
 }

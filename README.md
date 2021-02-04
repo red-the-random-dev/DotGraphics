@@ -1,11 +1,11 @@
 # DotGraphics
 An open-source PNG to Braille art image converter.
 
-/!\ Do not separate DLL library from executable file, as it contains needed classes.
+/!\ Do not separate DLL libraries from executable files, as they contain needed classes.
 
 This application is used for rendering monochome transparent images into Braille ASCII art.
 
-How-to: A 4-step tutorial of making your art:
+How-to: A 4-step tutorial of making your art (Console version):
 1) Make transparent PNG image in any available sprite editor. Pixels with Alpha = 0 will represent empty dots, any other color -- filled dots. (Using single-colored image is recommended). Note that image's width must be multiple of 2 and image's height must be multiple of 4.
 2) Open Command line (Win+R -> cmd) and link it to execulatble's directory using command 'cd "<full_directory_name_here>"'
 3) Run following command: 
@@ -30,3 +30,18 @@ Compilation and render commands can be chained:
 br -o mypng.png screen.o -rt screen.o myasciiart.txt
 
 For more comfortable interaction, create .bat file with list of commands in executable's directory.
+
+The Windows form version replaces the requirement to type in all commands with graphical interface.
+1. Select PNG file using Load from... button in upper section of window
+2. Select where to save Braille screen object by use of Save to... button in upper section of window
+3. Click "Construct" button, after which message "Compilation complete!" should appear
+4. Select constructed object by use of Load from... button in lower section of window
+5. Select where to save text file by use of Save to... button in lower section of window
+6. Click "Render" button, after which message "Render complete!" should appear
+
+Compiled objects are usable in both versions of application.
+
+(C) 2021 red-the-random-dev
+www.github.com/red-the-random-dev/DotGraphics/
+
+This software and source code are distributed under GNU General Public License v.3.0
