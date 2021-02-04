@@ -42,6 +42,15 @@ namespace DotGraphics.Cultures
 			English.Add("ui_loadbutton", "Load from...");
 			English.Add("ui_savebutton", "Save to...");
 			English.Add("ui_showresult", "Show result when render finishes");
+			// Scale, width, height
+			English.Add("ui_scale", "Scale");
+			English.Add("ui_width", "Width");
+			English.Add("ui_height", "Height");
+			// Fill and clear
+			English.Add("ui_fill", "Fill");
+			English.Add("ui_clear", "Clear");
+			// No file loaded
+			English.Add("ui_nofile", "No file loaded");
 			// File type filters
 			English.Add("filter_txt", "Text document (*.txt)|*.txt");
 			English.Add("filter_png", "PNG image file (*.png)|*.png");

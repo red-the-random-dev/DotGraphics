@@ -42,6 +42,15 @@ namespace DotGraphics.Cultures
 			Russian.Add("ui_loadbutton", "Открыть...");
 			Russian.Add("ui_savebutton", "Сохранить...");
 			Russian.Add("ui_showresult", "Показать результат после рендеринга изображения");
+			// Scale, width, height
+			Russian.Add("ui_scale", "Клетка");
+			Russian.Add("ui_width", "Ширина");
+			Russian.Add("ui_height", "Высота");
+			// Fill and clear
+			Russian.Add("ui_fill", "Заполн.");
+			Russian.Add("ui_clear", "Стер.");
+			// No file loaded
+			Russian.Add("ui_nofile", "Файл не загружен");
 			// File type filters
 			Russian.Add("filter_txt", "Текстовый документ (*.txt)|*.txt");
 			Russian.Add("filter_png", "PNG-изображение (*.png)|*.png");
