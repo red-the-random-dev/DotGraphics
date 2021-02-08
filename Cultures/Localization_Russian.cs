@@ -27,6 +27,7 @@ namespace DotGraphics.Cultures
 			Russian.Add("error_imageaspectratio", "Изображение не соответствует установленным параметрам: ширина не делится на 2 & высота не делится на 4.");
 			Russian.Add("error_imagetoolarge", "Размер изображения слишком велик: ширина и высота должны быть меньше 65536 точек.");
 			Russian.Add("error_renderfail", "Произошёл сбой во время разгрузки изображения в файл.");
+			Russian.Add("error_objecttoolarge", "Размеры объекта слишком большие для отображения в текущем сеансе. (Максимум: {0})");
 			// Section titles
 			Russian.Add("ui_complabel", "Собрать холст Брайля из PNG-изображения:");
 			Russian.Add("ui_renderlabel", "Перенести содержимое холста в текст:");
@@ -42,6 +43,15 @@ namespace DotGraphics.Cultures
 			Russian.Add("ui_loadbutton", "Открыть...");
 			Russian.Add("ui_savebutton", "Сохранить...");
 			Russian.Add("ui_showresult", "Показать результат после рендеринга изображения");
+			// Undo, width, height
+			Russian.Add("ui_undo", "Назад");
+			Russian.Add("ui_width", "Ширина");
+			Russian.Add("ui_height", "Высота");
+			// Fill and clear
+			Russian.Add("ui_fill", "Заполн.");
+			Russian.Add("ui_clear", "Стер.");
+			// No file loaded
+			Russian.Add("ui_nofile", "Файл не загружен");
 			// File type filters
 			Russian.Add("filter_txt", "Текстовый документ (*.txt)|*.txt");
 			Russian.Add("filter_png", "PNG-изображение (*.png)|*.png");

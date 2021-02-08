@@ -39,9 +39,22 @@ The Windows form version replaces the requirement to type in all commands with g
 5. Select where to save text file by use of Save to... button in lower section of window
 6. Click "Render" button, after which message "Render complete!" should appear
 
-Compiled objects are usable in both versions of application.
+The Editor application is a graphical solution for editing object files manually.
+
+How to do it:
+1. Launch BrailleEditor.exe
+2. Set up the size of drawing area
+3. Use LMB to fill tile and RMB to clear tile.
+4. Save the object in needed destination
+5. Hit "Render" button to save your art as text
+
+Use 'Undo' button to return to previous step.
+Use 'Load from...' button to load saved object. (Clears undo stack)
+
+Compiled objects are usable in all versions of application.
 
 (C) 2021 red-the-random-dev
+
 www.github.com/red-the-random-dev/DotGraphics/
 
 This software and source code are distributed under GNU General Public License v.3.0
