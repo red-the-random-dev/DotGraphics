@@ -27,6 +27,7 @@ namespace DotGraphics.Cultures
 			English.Add("error_imageaspectratio", "Image does not fit in following parameters: width is not multiple of 2 & height is not multiple of 4.");
 			English.Add("error_imagetoolarge", "Image size is too large: width and height should be less than 65536.");
 			English.Add("error_renderfail", "Error occured while trying to render an image to file.");
+			English.Add("error_objecttoolarge", "Object dimensions are too large for visualization on current system. (Limit: {0})");
 			// Section titles
 			English.Add("ui_complabel", "Instantiate Braille screen object from image:");
 			English.Add("ui_renderlabel", "Render object to text file:");
@@ -42,8 +43,8 @@ namespace DotGraphics.Cultures
 			English.Add("ui_loadbutton", "Load from...");
 			English.Add("ui_savebutton", "Save to...");
 			English.Add("ui_showresult", "Show result when render finishes");
-			// Scale, width, height
-			English.Add("ui_scale", "Scale");
+			// Undo, width, height
+			English.Add("ui_undo", "Undo");
 			English.Add("ui_width", "Width");
 			English.Add("ui_height", "Height");
 			// Fill and clear

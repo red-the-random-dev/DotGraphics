@@ -37,7 +37,6 @@ namespace DotGraphics.BrailleEditor
 			this.DrawingArea = new System.Windows.Forms.Panel();
 			this.FileName = new System.Windows.Forms.Label();
 			this.ScaleNumber = new System.Windows.Forms.NumericUpDown();
-			this.label1 = new System.Windows.Forms.Label();
 			this.WidthNumber = new System.Windows.Forms.NumericUpDown();
 			this.HeightNumber = new System.Windows.Forms.NumericUpDown();
 			this.label2 = new System.Windows.Forms.Label();
@@ -45,6 +44,7 @@ namespace DotGraphics.BrailleEditor
 			this.FillRadioBox = new System.Windows.Forms.RadioButton();
 			this.ClearRadioBox = new System.Windows.Forms.RadioButton();
 			this.CursorPosition = new System.Windows.Forms.Label();
+			this.UndoButton = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.ScaleNumber)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.WidthNumber)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.HeightNumber)).BeginInit();
@@ -99,9 +99,10 @@ namespace DotGraphics.BrailleEditor
 			// 
 			// ScaleNumber
 			// 
+			this.ScaleNumber.ImeMode = System.Windows.Forms.ImeMode.Off;
 			this.ScaleNumber.Location = new System.Drawing.Point(94, 64);
 			this.ScaleNumber.Maximum = new decimal(new int[] {
-									64,
+									720,
 									0,
 									0,
 									0});
@@ -111,6 +112,7 @@ namespace DotGraphics.BrailleEditor
 									0,
 									0});
 			this.ScaleNumber.Name = "ScaleNumber";
+			this.ScaleNumber.ReadOnly = true;
 			this.ScaleNumber.Size = new System.Drawing.Size(54, 22);
 			this.ScaleNumber.TabIndex = 3;
 			this.ScaleNumber.Value = new decimal(new int[] {
@@ -118,15 +120,6 @@ namespace DotGraphics.BrailleEditor
 									0,
 									0,
 									0});
-			// 
-			// label1
-			// 
-			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.label1.Location = new System.Drawing.Point(13, 66);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(75, 22);
-			this.label1.TabIndex = 4;
-			this.label1.Text = "Scale";
 			// 
 			// WidthNumber
 			// 
@@ -229,17 +222,28 @@ namespace DotGraphics.BrailleEditor
 			this.CursorPosition.Size = new System.Drawing.Size(66, 22);
 			this.CursorPosition.TabIndex = 4;
 			// 
+			// UndoButton
+			// 
+			this.UndoButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+			this.UndoButton.Location = new System.Drawing.Point(13, 63);
+			this.UndoButton.Name = "UndoButton";
+			this.UndoButton.Size = new System.Drawing.Size(75, 23);
+			this.UndoButton.TabIndex = 6;
+			this.UndoButton.Text = "Undo";
+			this.UndoButton.UseVisualStyleBackColor = true;
+			this.UndoButton.Click += new System.EventHandler(this.UndoButtonClick);
+			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(946, 564);
+			this.Controls.Add(this.UndoButton);
 			this.Controls.Add(this.ClearRadioBox);
 			this.Controls.Add(this.FillRadioBox);
 			this.Controls.Add(this.label3);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.CursorPosition);
-			this.Controls.Add(this.label1);
 			this.Controls.Add(this.HeightNumber);
 			this.Controls.Add(this.WidthNumber);
 			this.Controls.Add(this.ScaleNumber);
@@ -248,6 +252,7 @@ namespace DotGraphics.BrailleEditor
 			this.Controls.Add(this.SaveButton);
 			this.Controls.Add(this.RenderButton);
 			this.Controls.Add(this.LoadButton);
+			this.ImeMode = System.Windows.Forms.ImeMode.On;
 			this.Name = "MainForm";
 			this.Text = "BrailleEditor";
 			((System.ComponentModel.ISupportInitialize)(this.ScaleNumber)).EndInit();
@@ -255,6 +260,7 @@ namespace DotGraphics.BrailleEditor
 			((System.ComponentModel.ISupportInitialize)(this.HeightNumber)).EndInit();
 			this.ResumeLayout(false);
 		}
+		private System.Windows.Forms.Button UndoButton;
 		private System.Windows.Forms.Label CursorPosition;
 		private System.Windows.Forms.RadioButton ClearRadioBox;
 		private System.Windows.Forms.RadioButton FillRadioBox;
@@ -262,7 +268,6 @@ namespace DotGraphics.BrailleEditor
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.NumericUpDown HeightNumber;
 		private System.Windows.Forms.NumericUpDown WidthNumber;
-		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.NumericUpDown ScaleNumber;
 		private System.Windows.Forms.Label FileName;
 		private System.Windows.Forms.Panel DrawingArea;
